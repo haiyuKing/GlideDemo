@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glide的基础使用(使用fitCenter配合wrap_content显示原图大小)："/>
+        <!-- 图片使用src和android:scaleType="centerCrop"、android:adjustViewBounds="true"，可以实现宽高等边 -->
+        <ImageView
+            android:id="@+id/img_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_error"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glide的重新改变图片大小(使用override)："/>
+        <!-- 图片使用src和android:scaleType="centerCrop"、android:adjustViewBounds="true"，可以实现宽高等边 -->
+        <ImageView
+            android:id="@+id/img_override"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_error"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glide的圆角效果（使用MyRoundCornersTransformation，fitCenter()和centerCrop()方法会失效，自己设置的android:scaleType也会失效）"/>
+        <!-- 图片使用src和android:scaleType="centerCrop"、android:adjustViewBounds="true"，可以实现宽高等边 -->
+        <ImageView
+            android:id="@+id/img_myRound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_error"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glide的圆角效果（使用RoundCornersTransformation，fitCenter()和centerCrop()方法会失效，自己设置的android:scaleType也会失效）"/>
+        <!-- 图片使用src和android:scaleType="centerCrop"、android:adjustViewBounds="true"，可以实现宽高等边 -->
+        <ImageView
+            android:id="@+id/img_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_error"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glide的圆角效果（使用GlideCircleTransform，fitCenter()和centerCrop()方法会失效，自己设置的android:scaleType也会失效）"/>
+        <!-- 图片使用src和android:scaleType="centerCrop"、android:adjustViewBounds="true"，可以实现宽高等边 -->
+        <ImageView
+            android:id="@+id/img_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_error"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Glide的圆角效果（使用BitmapCircleUtil）"/>
+        <!-- 图片使用src和android:scaleType="centerCrop"、android:adjustViewBounds="true"，可以实现宽高等边 -->
+        <ImageView
+            android:id="@+id/img_circleUtil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_error"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
